@@ -1,0 +1,89 @@
+ /* ----------------- Cultural Leadership Section ----------------- */
+#leadership {
+  padding: 100px 10%;
+  background: #031224;
+  text-align: center;
+}
+
+#leadership h2 {
+  color: #00b4ff;
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+.leadership-card {
+  background: #071730;
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 180, 255, 0.1);
+  transition: all 0.4s ease;
+}
+
+.leadership-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 180, 255, 0.3);
+}
+
+.leadership-card .icon {
+  background: #002244;
+  color: #00b4ff;
+  font-size: 40px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.leadership-card .content {
+  text-align: left;
+  flex: 1;
+}
+
+.leadership-card .content h3 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.leadership-card .content p {
+  color: #b0b8c3;
+  margin-bottom: 10px;
+}
+
+/* ----------------- Footer ----------------- */
+footer {
+  background: linear-gradient(to right, #010b17, #020c1b);
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid #0a1a33;
+}
+
+footer p {
+  color: #b0b8c3;
+  margin: 10px 0;
+}
+
+footer .socials {
+  margin: 15px 0;
+}
+
+footer .socials a {
+  color: #00b4ff;
+  font-size: 22px;
+  margin: 0 12px;
+  transition: 0.3s;
+}
+
+footer .socials a:hover {
+  color: white;
+}
+
+footer .copy {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}

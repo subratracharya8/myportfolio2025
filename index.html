@@ -1,0 +1,211 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Subrat Acharya - Portfolio showcasing projects, leadership, and creative work." />
+  <title>Subrat Acharya | Portfolio</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome CDN -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #050B16;
+      color: #E5E7EB;
+    }
+
+    /* Glow Animation */
+    @keyframes glowPulse {
+      0% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.4); }
+      50% { box-shadow: 0 0 40px rgba(0, 255, 255, 0.8); }
+      100% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.4); }
+    }
+    .glow-ring {
+      animation: glowPulse 3s ease-in-out infinite;
+    }
+
+    /* Fade-in Animation */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeInUp 1.2s ease-out forwards;
+    }
+    .fade-delay-1 { animation-delay: 0.3s; }
+    .fade-delay-2 { animation-delay: 0.6s; }
+    .fade-delay-3 { animation-delay: 0.9s; }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- ===== Navbar ===== -->
+  <header class="fixed top-0 left-0 w-full bg-[#0A0F1E]/80 backdrop-blur-md z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-sky-400">Subrat Acharya</h1>
+      <nav class="space-x-6 text-gray-300">
+        <a href="#about" class="hover:text-sky-400 transition">About</a>
+        <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
+        <a href="#cultural-leadership" class="hover:text-sky-400 transition">Leadership</a>
+        <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section with Profile ===== -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-[#0A0F1E] to-[#050B16] px-6">
+    <div class="relative w-48 h-48 rounded-full border-4 border-cyan-400 glow-ring overflow-hidden fade-in">
+      <img src="image.jpg" 
+           alt="Subrat Acharya" 
+           class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+    </div>
+
+    <h2 class="mt-6 text-4xl font-bold text-white fade-in fade-delay-1">Hello, I'm Subrat Acharya 👋</h2>
+    <p class="mt-4 text-lg text-gray-400 max-w-2xl fade-in fade-delay-2">
+      A passionate developer, designer, and cultural leader dedicated to building meaningful digital experiences and fostering community connection.
+    </p>
+
+    <a href="#projects" 
+       class="mt-8 inline-block bg-sky-600 hover:bg-sky-500 px-6 py-3 rounded-full text-white font-medium transition fade-in fade-delay-3">
+      Explore My Work
+    </a>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="py-20 bg-[#0A0F1E] text-center px-6">
+    <h2 class="text-4xl font-bold text-sky-400 mb-6">About Me</h2>
+    <p class="max-w-3xl mx-auto text-gray-300 leading-relaxed">
+      I'm an enthusiastic developer with a deep interest in technology, culture, and community engagement.
+      I enjoy building visually appealing, functional websites and applications that create impact.
+      Outside of coding, I lead cultural initiatives that connect people and promote diversity.
+    </p>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="py-20 bg-gradient-to-b from-[#0A0F1E] to-[#000000] text-white">
+    <div class="container mx-auto px-6 md:px-12">
+      <h2 class="text-4xl font-bold text-center mb-12 text-sky-400">Projects</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Example Project 1 -->
+        <div class="bg-[#0D1428] p-6 rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-sky-500/20 transition-transform duration-300">
+          <h3 class="text-2xl font-semibold mb-2">Portfolio Website</h3>
+          <p class="text-gray-400 mb-4">
+            A modern responsive personal portfolio built using Tailwind CSS and JavaScript to showcase my professional work and leadership.
+          </p>
+          <a href="#" class="text-sky-400 hover:underline" aria-label="View Portfolio Website Project">View Project →</a>
+        </div>
+
+        <!-- Example Project 2 -->
+        <div class="bg-[#0D1428] p-6 rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-sky-500/20 transition-transform duration-300">
+          <h3 class="text-2xl font-semibold mb-2">Cultural Event Management App</h3>
+          <p class="text-gray-400 mb-4">
+            A web application to manage and promote cultural events, connecting university students across different backgrounds.
+          </p>
+          <a href="#" class="text-sky-400 hover:underline" aria-label="View Cultural Event Management App">View Project →</a>
+        </div>
+
+        <!-- Example Project 3 -->
+        <div class="bg-[#0D1428] p-6 rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-sky-500/20 transition-transform duration-300">
+          <h3 class="text-2xl font-semibold mb-2">Community Blog Platform</h3>
+          <p class="text-gray-400 mb-4">
+            A collaborative blogging platform that allows students to share stories, articles, and experiences related to their culture.
+          </p>
+          <a href="#" class="text-sky-400 hover:underline" aria-label="View Community Blog Platform">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Cultural Leadership Section ===== -->
+  <section id="cultural-leadership" class="py-20 bg-[#0A0F1E] text-white">
+    <div class="container mx-auto px-6 md:px-12">
+      <h2 class="text-4xl font-bold text-center mb-12 text-sky-400">Cultural Leadership</h2>
+
+      <div class="max-w-4xl mx-auto bg-[#0D1428] p-8 rounded-2xl shadow-lg transition-transform duration-500 hover:-translate-y-2 hover:shadow-sky-500/20">
+        <div class="flex items-center mb-6">
+          <div class="bg-sky-600 p-3 rounded-lg mr-4">
+            <i class="fa-solid fa-people-group text-2xl text-white"></i>
+          </div>
+          <h3 class="text-2xl font-bold">Nepali Cultural Club Founder</h3>
+        </div>
+
+        <p class="text-gray-300 leading-relaxed">
+          Founded and led the Nepali Cultural Club at the university, creating a platform to showcase the rich Nepali heritage and traditions to a diverse student community.
+        </p>
+
+        <p class="text-gray-300 leading-relaxed mt-4">
+          This initiative helped foster cultural awareness, strengthen community bonds, and provide fellow Nepali students with a sense of belonging while sharing our vibrant culture with others.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="py-20 bg-gradient-to-b from-[#000000] to-[#050B16] text-center text-white">
+    <h2 class="text-4xl font-bold text-sky-400 mb-6">Get In Touch</h2>
+    <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+      Whether you want to collaborate, discuss new opportunities, or simply say hello, feel free to reach out!
+    </p>
+    <a href="mailto:subrat@example.com"
+       class="bg-sky-600 hover:bg-sky-500 px-8 py-3 rounded-full text-white font-medium transition"
+       aria-label="Send email to Subrat Acharya">Say Hello</a>
+  </section>
+
+  <!-- ===== Footer Section ===== -->
+<!-- ===== Footer Section ===== -->
+<footer class="bg-[#050B16] text-gray-400 py-10 text-center fade-in fade-delay-3">
+  <p class="text-lg mb-4">Let's connect and create something amazing together</p>
+
+  <!-- Social Icons -->
+  <div class="flex justify-center space-x-6 mb-6">
+    <!-- GitHub -->
+    <a href="https://github.com/subratacharya" 
+       aria-label="GitHub profile" 
+       title="GitHub" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="text-gray-400 hover:text-sky-400 transition-colors duration-300 text-2xl">
+       <img src="github.png" class="w-6 h-6" alt="Github Icon" />
+      <i class="fab fa-github"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/subratacharya" 
+       aria-label="LinkedIn profile" 
+       title="LinkedIn" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="text-gray-400 hover:text-sky-400 transition-colors duration-300 text-2xl">
+       <img src="linkdin.png" class="w-6 h-6" alt="LinkedIn Icon" />
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:subrat@example.com" 
+       aria-label="Send email" 
+       title="Email"
+       class="text-gray-400 hover:text-sky-400 transition-colors duration-300 text-2xl">
+       <img src="gmail.jpg" class="w-6 h-6" alt="Email Icon" />
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+
+  <p class="text-sm text-gray-500">© 2025 Subrat Acharya. All rights reserved.</p>
+</footer>
+
+  
+</body>
+</html>
